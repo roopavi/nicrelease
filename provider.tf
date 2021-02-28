@@ -6,13 +6,3 @@ provider "azurerm" {
   client_secret   = "_Dw9V-.~T9-Na2wO88wI-f3YSmOzuy_5-p"
   tenant_id       = "7829b58f-8707-4a6d-bf5f-d8f7ac3c18ea"
 }
-
-terraform {
-  backend "azurerm" {
-    resource_group_name  = "rg1_storage"
-    storage_account_name = "grsvstorageaccount"
-    container_name       = "containergrsv"
-    key                  = "terraform.tfstate"
-    access_key           = "TFsU9Xd1Bsvh6NMwToaOFFF+wqunmiHctyaTLYHHmg6QKfwESISEhApkKRSD2nIabEINr6kWdcbHp7hgTsPpcw=="
-  }
-}
